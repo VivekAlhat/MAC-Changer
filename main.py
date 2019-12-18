@@ -13,7 +13,7 @@ if re.match('^[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-Z0-9]{2}:[a-zA-
     # subprocess.call("ifconfig "+ _interface + " hw ether "+ _newMac, shell=True)
     # subprocess.call("ifconfig "+ _interface + " up",shell=True)
     
-    # The above way is less secure because in end user can execute multiple commands by manipulating variables
+    # The above way is less secure because end user can execute multiple commands by manipulating variables
     # To restrict user from executing unnecessary commands, following way is more preferable
 
     subprocess.call(["ifconfig", _interface, "down"])
