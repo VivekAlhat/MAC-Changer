@@ -8,3 +8,5 @@
 # How to use ?
 * Execute - pip install -r requirements.txt
 * Execute main.py
+
+I use [pipreqs](https://pypi.org/project/pipreqs/) to generate dependencies.
