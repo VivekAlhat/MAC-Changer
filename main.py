@@ -1,6 +1,9 @@
 import re
+import optparse
 import netifaces
 import subprocess
+
+parser = optparse.OptionParser()
 
 print(netifaces.interfaces())
 _interface = input('Which interface? > ')
