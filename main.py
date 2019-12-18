@@ -3,7 +3,7 @@ import netifaces
 import subprocess
 
 print(netifaces.interfaces())
-_interface = input('Select the interface? ')
+_interface = input('Type the interface: ')
 print('Current MAC address for {} is {}'.format(_interface, netifaces.ifaddresses(_interface)[netifaces.AF_LINK][0].get('addr')))
 print('[+] Changing MAC address for {}'.format(_interface))
 _newMac = input('Enter the new MAC address: ')
