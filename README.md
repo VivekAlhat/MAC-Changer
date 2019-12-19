@@ -6,7 +6,8 @@
 - Example : 00:11:22:33:44:55
 
 # How to use ?
-* Execute - pip install -r requirements.txt
-* Execute main.py
+* Execute - pip install -r requirements.txt to install the requirements
+* python main.py --interface <interface_name> --mac <new_MAC> or
+* python main.py -i <interface_name> -m <new_MAC>
 
 I use [pipreqs](https://pypi.org/project/pipreqs/) to generate dependencies.
