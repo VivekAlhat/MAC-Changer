@@ -32,3 +32,5 @@ parser.add_option("-m", "--mac", dest="new_MACaddr", help="New MAC address (e.g 
 _interface = opt.interface
 _newMac = opt.new_MACaddr
 macChanger(_interface,_newMac)
+ifcRes = subprocess.check_output(["ifconfig", _interface])
+print(ifcRes)
